@@ -1,0 +1,9 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>SSH User Enumaration</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body>
+    <div class='page'><h1 class='title'>SSH User Enumaration</h1><br/>1. Download the exploit form the exploit-db site: <a href="https://vulners.com/canvas/SSH_ENUM">https://vulners.com/canvas/SSH_ENUM</a><br />2. Set target IP as bash variable: <div class="codebox"><div class="codebox"><br /><br /><span style="color:#ff9d00;font-weight:700">export</span>&nbsp;<span style="color:#7f0044;font-weight:400">IP</span>=198.50.252.65</div></div><br />3. Run the exploit with: <div class="codebox"><div class="codebox"><br />python2.7&nbsp;ssh_User_enum.py&nbsp;--port&nbsp;22&nbsp;$IP&nbsp;--userList&nbsp;ssh-usernames.txt</div></div> <br />    &gt; This will run the exploit on the different usernames in the list 1-by-1 to check for valid usernames on the SSH service.<br />4. After finding a valid username or multiple usernames, we can try to bruteforce their passwords using hydra for example.</div></body></html>

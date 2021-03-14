@@ -1,0 +1,23 @@
+# Nmap 7.91 scan initiated Thu Feb  4 15:25:09 2021 as: nmap -sV -T4 -A -p21-8080 --script vulners -oN vuln_scan.nmap 198.50.252.65
+Nmap scan report for ip65.ip-198-50-252.net (198.50.252.65)
+Host is up (0.037s latency).
+Not shown: 8056 filtered ports
+PORT    STATE  SERVICE    VERSION
+22/tcp  open   tcpwrapped
+25/tcp  closed smtp
+80/tcp  open   http       Apache httpd
+|_http-server-header: Apache
+443/tcp closed https
+Device type: WAP
+Running: Actiontec embedded, Linux
+OS CPE: cpe:/h:actiontec:mi424wr-gen3i cpe:/o:linux:linux_kernel
+OS details: Actiontec MI424WR-GEN3I WAP
+Network Distance: 2 hops
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   0.22 ms 192.168.188.2
+2   0.04 ms ip65.ip-198-50-252.net (198.50.252.65)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb  4 15:30:43 2021 -- 1 IP address (1 host up) scanned in 334.53 seconds
